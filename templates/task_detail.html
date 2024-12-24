@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Детали задачи{% endblock %}
+
+{% block content %}
+    <h1> Детали задачи</h1>
+    <p><strong>ОписаниеЖ:</strong> {{ task.description }}</p>
+    <p><strong>Статус:</strong> {{ "Выполнена" if task.is_completed else "Не выполнена"}}</p>
+{% endblock %}
